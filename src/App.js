@@ -47,11 +47,11 @@ function App() {
       </div>
 
         <main className='main'>
-          <h2>CEP: 00000-000</h2>
-          <spam>Rua: Teste algum</spam>
-          <spam>Complemento: Teste complemento</spam>
-          <spam>Bairro: Teste</spam>
-          <spam>Belém - PA</spam>
+        <h2>CEP: {cep.cep }</h2>
+        <spam>Rua:{ cep.logradouro }</spam>
+        <spam>Complemento:{cep.complemento }</spam>
+        <spam>Bairro:{ cep.bairro }</spam>
+        <spam>{cep.localidade} - { cep.uf }</spam>
         </main>
     </div>
   );
