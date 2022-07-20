@@ -49,8 +49,8 @@ function App() {
         <main className='main'>
         
             <h2>CEP: {cep.cep }</h2>
-            <spam>Rua:{ cep.logradouro }</spam>
-            <spam>Complemento:{cep.complemento }</spam>
+            <spam>End: { cep.logradouro }</spam>
+            <spam>Número: {cep.complemento }</spam>
             <spam>Bairro:{ cep.bairro }</spam>
             <spam>{cep.localidade} - { cep.uf }</spam>
         </main>
