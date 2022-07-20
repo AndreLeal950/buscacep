@@ -43,16 +43,18 @@ function App() {
           <FiSearch  size={25} color='#dacece'
           />
         </button>
-
       </div>
+      {Object.keys(cep).length > 0 && (
 
         <main className='main'>
-        <h2>CEP: {cep.cep }</h2>
-        <spam>Rua:{ cep.logradouro }</spam>
-        <spam>Complemento:{cep.complemento }</spam>
-        <spam>Bairro:{ cep.bairro }</spam>
-        <spam>{cep.localidade} - { cep.uf }</spam>
+        
+            <h2>CEP: {cep.cep }</h2>
+            <spam>Rua:{ cep.logradouro }</spam>
+            <spam>Complemento:{cep.complemento }</spam>
+            <spam>Bairro:{ cep.bairro }</spam>
+            <spam>{cep.localidade} - { cep.uf }</spam>
         </main>
+      )}
     </div>
   );
 }
